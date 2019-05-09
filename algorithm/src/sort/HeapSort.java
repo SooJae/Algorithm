@@ -67,14 +67,14 @@ public class HeapSort {
         }
     }
     private static void heapSort(int arr[]) {
-        int i, temp, length = arr.length;
-        for(i=length/2-1; i>=0; i--)  //4 3 2 1 0 
+        int temp, length = arr.length;
+        for(int i=length/2-1; i>=0; i--)  //4 3 2 1 0 
         	heapify(arr, length, i); // 자식을 가지는 첫번째 노드가 length /2 에 있기때문에 이보다 큰 것은 heapify를 할 필요가 없다.
         
         ////여기까지가 이진 정렬
         
         //힙정렬
-        for(i=length-1; i>=0; i--) {
+        for(int i=length-1; i>=0; i--) {
             temp = arr[0]; 
             arr[0] = arr[i]; 
             arr[i] = temp;
