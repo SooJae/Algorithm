@@ -14,8 +14,8 @@ public class Main {
 		
 		
 		//bs.sort(arr);
-		//ms.sort(arr,0,arr.length-1);
-		hs.sort(arr);
+		qs.sort(arr,0,arr.length-1);
+		//hs.sort(arr);
 		for(int x : arr) {
 			System.out.print(x+" ");
 		}
