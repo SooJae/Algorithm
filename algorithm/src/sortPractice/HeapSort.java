@@ -8,15 +8,15 @@ public class HeapSort {
         for(int x: a) System.out.print(x+" ");
     }
     
-    public static void heapSort(int[] a) {
+    public static void heapSort(int[] arr) {
     	int temp; 
-    	int length = a.length;
-    	for(int i=length/2-1; i>=0; i--)  heapify(a, length, i);
+    	int length = arr.length;
+    	for(int i=length/2-1; i>=0; i--)  heapify(arr, length, i);
     	for(int i=length-1; i>=0 ; i--) {
-    		temp=a[0];
-    		a[0] = a[i];
-    		a[i] =temp;
-    		heapify(a,i,0);
+    		temp=arr[0];
+    		arr[0] = arr[i];
+    		arr[i] =temp;
+    		heapify(arr,i,0);
     	}
     		
     }
