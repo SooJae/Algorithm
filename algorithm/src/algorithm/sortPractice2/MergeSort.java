@@ -1,4 +1,4 @@
-package sortPractice2;
+package algorithm.sortPractice2;
 
 public class MergeSort {
 

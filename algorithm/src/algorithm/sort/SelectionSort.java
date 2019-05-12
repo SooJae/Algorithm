@@ -1,18 +1,11 @@
-package sortPractice;
+package algorithm.sort;
 
 public class SelectionSort {
 	
 	public static void main(String[] args) {
-		int a[] = {10,1,5,2,3,4,6};
+		int a[] = {10,2,4,8,5,6,1,7,3,9};
 		
-		sort(a);
-		
-		for(int x : a) System.out.println(x);
-		
-	}
-	
-	static public void sort(int[] a ) {
-		for(int i = 0; i<a.length; i++) {
+		for(int i = 0; i<a.length-1; i++) {
 			int min = i;
 			for(int j =1+i; j<a.length;j++) {
 				if(a[j]<a[min]) {
@@ -23,7 +16,9 @@ public class SelectionSort {
 			a[min] = a[i];
 			a[i] = tmp;
 		}
-		
-		
+		for(int x : a) {
+			System.out.println(x);
+		}
 	}
+	
 }

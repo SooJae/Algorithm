@@ -1,4 +1,4 @@
-package sortPractice;
+package algorithm.sortPractice;
 
 public class HeapSort {
 	
