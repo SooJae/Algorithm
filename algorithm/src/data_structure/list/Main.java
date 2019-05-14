@@ -19,7 +19,7 @@ public class Main {
 		while(li.hasNext()) {
 			int number = (int) li.next();
 			if(number == 30) {
-				li.add(35);
+				li.remove();
 			}
 		}
 		System.out.println(numbers);

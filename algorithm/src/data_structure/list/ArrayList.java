@@ -93,7 +93,10 @@ public class ArrayList<T> {
 		}
 		public void add(Object element) {
 			//elementData[nextIndex++]=element;
-	ArrayList.this.add(nextIndex++, element);
+			ArrayList.this.add(nextIndex++, element);
+		}
+		public void remove() {
+			ArrayList.this.remove(--nextIndex);
 		}
 	}
 

@@ -6,20 +6,21 @@ public class QuickSort {
 		int left = l;
 		int right = r;
 		int pivot = (left+right)/2;
+		do {
+			while(arr[left]<arr[pivot]) left++;
+			while(arr[right]>arr[pivot]) right--;
+			
+			if(left<=right) {
+				int temp = arr[left];
+				arr[left] = arr[right];
+				arr[right] = temp;
+				left++;
+				right--;
+			}
+		}while(left<=right);
 		
-		while(arr[left]<arr[pivot]) left++;
-		while(arr[right]>arr[pivot]) right--;
-		
-		if(left<=right) {
-			int temp = arr[left];
-			arr[left] = arr[right];
-			arr[right] = temp;
-			left++;
-			right--;
-		}
-		
-		if(l< right) sort(arr, l, right);
-		if(left < r) sort(arr, left, r);
+		if(l< pivot) sort(arr, l, pivot); 
+		if(pivot < r) sort(arr, pivot, r); 
 		
 	}
 }
