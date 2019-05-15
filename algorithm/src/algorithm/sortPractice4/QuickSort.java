@@ -1,8 +1,9 @@
-package algorithm.sortPractice2;
+package algorithm.sortPractice4;
 
 public class QuickSort {
 
-	public void sort(int[] arr, int l, int r){
+	public void sort(int[] arr, int l, int r) {
+
 		int left = l;
 		int right = r;
 		int pivot = (left+right)/2;
@@ -19,9 +20,8 @@ public class QuickSort {
 				right--;
 			}
 		}
-		
 		if(l< right) sort(arr, l, right); 
 		if(left < r) sort(arr, left, r); 
-		
 	}
+
 }
