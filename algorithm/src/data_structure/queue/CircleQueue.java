@@ -72,6 +72,7 @@ public class CircleQueue {
 		if(empty()) throw new ArrayIndexOutOfBoundsException();
 		
 		for(int i =0; i< num ; i++) {
+
 			if(queueCircle[(i+front) % maxSize].equals(x))
 				return i+1;
 		}
