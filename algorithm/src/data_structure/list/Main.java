@@ -15,13 +15,13 @@ public class Main {
 //			System.out.println(numbers.get(i));
 //		}
 		
-		ArrayList.ListIterator li = numbers.listIterator();
-		while(li.hasNext()) {
-			int number = (int) li.next();
-			if(number == 30) {
-				li.remove();
-			}
-		}
+//		ArrayList.ListIterator li = numbers.listIterator();
+//		while(li.hasNext()) {
+//			int number = (int) li.next();
+//			if(number == 30) {
+//				li.remove();
+//			}
+//		}
 		System.out.println(numbers);
 	}
 }

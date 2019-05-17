@@ -44,7 +44,7 @@ public class ArrayList<T> {
 		String str = "[";
 		for(int i = 0; i< size; i++) {
 			str += elementData[i];
-			str += (i < size-1)?  "," : "";
+			str += (i < size-1)?  "," : " ";
 		}
 		return str +="]";
 	}
