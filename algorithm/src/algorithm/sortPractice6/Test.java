@@ -10,7 +10,7 @@ public class Test {
 		SelectionSort6 ss = new SelectionSort6();
 		MergeSort6 ms = new MergeSort6();
 		QuickSort6 qs = new QuickSort6();
-		ms.sort(arr,0,arr.length-1);
+		qs.sort(arr,0,arr.length-1);
 		for(int x: arr) {
 			System.out.print(x + " ");
 		}
