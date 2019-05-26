@@ -96,5 +96,9 @@ public class LinkedList {
 		return remove(size-1); // 사이즈 -1 값 = 마지막의 인덱스 값
 	}
 	
+	
+	
+	
+	
 
 }

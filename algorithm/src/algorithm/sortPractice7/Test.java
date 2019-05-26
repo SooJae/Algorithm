@@ -9,10 +9,11 @@ public class Test {
 		BubbleSort7 bs = new BubbleSort7();
 		InsertionSort7 is = new InsertionSort7();
 		SelectionSort7 ss = new SelectionSort7();
-//		MergeSort7 ms = new MergeSort7();
-//		QuickSort7 qs = new QuickSort7();
+		MergeSort7 ms = new MergeSort7();
+		QuickSort7 qs = new QuickSort7();
+		HeapSort7 hs = new HeapSort7();
 		//qs.sort(arr,0,arr.length-1);
-		is.sort(arr);
+		hs.sort(arr);
 		for(int x: arr) {
 			System.out.print(x + " ");
 		}

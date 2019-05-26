@@ -1,5 +1,7 @@
 package data_structure.practice3.list;
 
+import data_structure.practice2.list.ArrayList;
+
 public class ArrayList3 {
 	private int num;
 	private int size;
@@ -40,5 +42,36 @@ public class ArrayList3 {
 	public Object remove(int index) {
 		Object toBeRemoved = arrayList[index];
 		return null;
+	}
+	
+	
+	public ListIterator iterator() {
+		return new ListIterator();
+	}
+	public int size() {
+		return size;
+	}
+	class ListIterator{
+		int nextIndex = 0;
+		public Object next() {
+			return arrayList[nextIndex++];
+		}
+		public boolean hasNext() {
+			return nextIndex < size();
+		}
+		public Object previous() {
+			return arrayList[--nextIndex];
+		}
+		public boolean hasPrevious() {
+			return nextIndex>0;
+		}
+		
+		public void add(Object element) {
+			//elementData[nextIndex++]=element;
+			ArrayList3.this.add(nextIndex++, element);
+		}
+		public void remove() {
+			ArrayList3.this.remove(--nextIndex);
+		}
 	}
 }
