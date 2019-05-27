@@ -140,8 +140,8 @@ public class LinkedList3 {
 		private Node lastReturned;
 		private int nextIndex;
 		
-		ListIterator(){
-			next =head;
+		public ListIterator(){
+			next = head;
 		}
 		public Object next() {
 			lastReturned = next;
