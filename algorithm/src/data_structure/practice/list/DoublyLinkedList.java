@@ -24,17 +24,14 @@ public class DoublyLinkedList {
 		Node newNode = new Node(input);
 		newNode.next = head; //새 노드가 head가 가리키는 노드를 가리킴
 		
-		head.prev = newNode; //head가 가리키고 있는 노드
-		head = newNode;
+		if(head !=null) head.prev = newNode; //노드가 하나도 없을때
 		
-		if(head!=null) head.prev = newNode;
 		
 		head = newNode;
 		size++;
 		
-		if(head.next == null) {
-			tail = head;
-		}
+		if(head.next == null) tail = head;
+		
 	}
 
 	public void addLast(Object input) {
