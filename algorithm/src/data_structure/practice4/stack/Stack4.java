@@ -1,7 +1,7 @@
 package data_structure.practice4.stack;
 
 public class Stack4 {
-
+//
 	private int ptr;
 	private int size;
 	private Object[] stk;
