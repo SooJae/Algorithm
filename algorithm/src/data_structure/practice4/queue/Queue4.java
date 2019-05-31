@@ -61,5 +61,15 @@ public class Queue4 {
 		return -1;
 	}
 	
+	public void clear() {
+		num = front = rear =0;
+	}
 	
+	public int capacity() {
+		return size;
+	}
+	
+	public int size() {
+		return num;
+	}
 }
