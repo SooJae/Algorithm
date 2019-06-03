@@ -12,8 +12,8 @@ public class Test {
 		MergeSort7 ms = new MergeSort7();
 		QuickSort7 qs = new QuickSort7();
 		HeapSort7 hs = new HeapSort7();
-		//qs.sort(arr,0,arr.length-1);
-		hs.sort(arr);
+		qs.sort(arr,0,arr.length-1);
+		//hs.sort(arr);
 		for(int x: arr) {
 			System.out.print(x + " ");
 		}
