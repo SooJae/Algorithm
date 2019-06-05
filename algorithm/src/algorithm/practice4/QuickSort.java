@@ -20,8 +20,8 @@ public class QuickSort {
 				right--;
 			}
 		}
-		if(l< right) sort(arr, l, right); 
 		if(left < r) sort(arr, left, r); 
+		if(l< right) sort(arr, l, right); 
 	}
 
 }

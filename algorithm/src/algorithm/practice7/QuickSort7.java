@@ -17,9 +17,9 @@ public class QuickSort7 {
 				l++;
 				r--;
 			}
+			if(left<r) sort(a,left,r);
+			if(right<l) sort(a,l,right);
 		}while(l<=r);
-		if(left<r) sort(a,left,r);
-		if(right<l) sort(a,l,right);
 	}
 
 }
