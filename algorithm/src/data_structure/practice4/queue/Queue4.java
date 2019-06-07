@@ -26,11 +26,11 @@ public class Queue4 {
 		queue[rear++] = o;
 		num++;
 		
-		if(num == size) rear =0;
+		if(rear == size) rear =0;
 	}
 	
 	public Object deQueue() {
-		if(num <= size) throw new EmptyQueueException();
+		if(num <= 0) throw new EmptyQueueException();
 		Object returnData = queue[front++];
 		num--;
 		if(front == size) front =0;
@@ -38,7 +38,7 @@ public class Queue4 {
 	}
 	
 	public Object peekQueue() {
-		if(num <= size) throw new EmptyQueueException();
+		if(num <= 0) throw new EmptyQueueException();
 		return queue[front];
 	}
 	
