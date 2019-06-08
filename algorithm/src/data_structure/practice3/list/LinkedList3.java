@@ -36,10 +36,10 @@ public class LinkedList3 {
 	}
 	
 	public void addLast(Object o) {
-		Node newNode = new Node(o);
 		if(size == 0) {
 			addFirst(o);
 		} else {
+			Node newNode = new Node(o);
 			tail.next = newNode;
 			tail = newNode;
 			size++;
@@ -176,7 +176,6 @@ public class LinkedList3 {
 			LinkedList3.this.remove(nextIndex-1); // 이렇게 하면 for문을 2번 돌기 때문에 비효율적
 			nextIndex--;
 		}
-		
 	}
 	
 }
