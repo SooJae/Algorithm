@@ -1,5 +1,6 @@
 package algorithm.practice12.sort.factory;
 
+import algorithm.practice12.sort.sort.SSort12;
 import algorithm.practice12.sort.sort.Sortable;
 import algorithm.practice12.sort.sortImpl.BubbleSort12;
 import algorithm.practice12.sort.sortImpl.HeapSort12;
@@ -9,15 +10,18 @@ import algorithm.practice12.sort.sortImpl.SelectionSort12;
 public class SingleArgSortFactory12 extends SortFactory12{
 
 	@Override
-	public Sortable createSort12(String sortType) {
-		if(sortType.equalsIgnoreCase("BS")) {
+	public SSort12 createSort12(String sortType) {
+		switch(sortType) {
+			
+		case "bs":
 			return new BubbleSort12();
-		} else if(sortType.equalsIgnoreCase("SS")) {
+		case "ss":
 			return new SelectionSort12();
-		} else if(sortType.equalsIgnoreCase("IS")) {
+		case "is":
 			return new InsertionSort12();
-		} else if(sortType.equalsIgnoreCase("HS")) {
-			return new HeapSort12();
+		case "hs":
+			return new HeapSort12(); 
+			
 		}
 		
 		return null;
