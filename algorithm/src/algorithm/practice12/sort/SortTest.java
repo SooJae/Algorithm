@@ -7,7 +7,6 @@ import algorithm.practice12.sort.factory.SingleArgSortFactory12;
 import algorithm.practice12.sort.factory.SortFactory12;
 import algorithm.practice12.sort.sort.MSort12;
 import algorithm.practice12.sort.sort.SSort12;
-import algorithm.practice12.sort.sort.Sortable;
 
 public class SortTest {
 	
@@ -21,14 +20,14 @@ public class SortTest {
 		switch(select) {
 			case "bs": case "ss": case "is": case "hs":
 				
-				SortFactory12 sf = new SingleArgSortFactory12();
-				Sortable sSort= sf.createSort12(select);
-				((SSort12) sSort).sort(arr);
+				SortFactory12<SSort12> sf = new SingleArgSortFactory12();
+				SSort12 sSort= sf.createSort12(select);
+				sSort.sort(arr);
 				break;
 			case "ms": case"qs":
-				SortFactory12 mf = new MultipleArgSortFactory12();
-				Sortable mSort = mf.createSort12(select);
-				((MSort12) mSort).sort(arr, 0, arr.length-1);
+				SortFactory12<MSort12> mf = new MultipleArgSortFactory12();
+				MSort12 mSort = mf.createSort12(select);
+				mSort.sort(arr, 0, arr.length-1);
 				break;
 				
 			default:
