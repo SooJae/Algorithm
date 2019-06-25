@@ -13,13 +13,18 @@ public class SortTest {
 	static int[] arr = {5,3,1,7,2,-23,10,8,4,9,6};
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		
+		while(true) {
 		System.out.print("어떤 정렬을 원하세요? (bs,ss,is,hs,ms,qs) : ");
 		String select= in.nextLine();
 		
-		
-		switch(select) {
+			if(select.equalsIgnoreCase("q")) {
+				System.out.println("종료합니다.");
+				break;
+			}
+			
+			switch(select) {
 			case "bs": case "ss": case "is": case "hs":
-				
 				SortFactory12<SSort12> sf = new SingleArgSortFactory12();
 				SSort12 sSort= sf.createSort12(select);
 				sSort.sort(arr);
@@ -32,13 +37,16 @@ public class SortTest {
 				
 			default:
 				System.out.println("다시 입력해주세요.");
-			
+				continue;
+				
+			}
+			for(int x : arr) {
+				System.out.print(x+" ");
+			}
+			System.out.println();
 		}
 		
 		
-		for(int x : arr) {
-			System.out.print(x+" ");
-		}
 		
 		
 		
