@@ -4,6 +4,8 @@ import algorithm.practice12.sort.sort.MSort12;
 import algorithm.practice12.sort.sortImpl.BubbleSort12;
 import algorithm.practice12.sort.sortImpl.HeapSort12;
 import algorithm.practice12.sort.sortImpl.InsertionSort12;
+import algorithm.practice12.sort.sortImpl.MergeSort12;
+import algorithm.practice12.sort.sortImpl.QuickSort12;
 import algorithm.practice12.sort.sortImpl.SelectionSort12;
 
 public class MultipleArgSortFactory12 extends SortFactory12 {

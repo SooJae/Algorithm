@@ -1,4 +1,4 @@
-package algorithm.practice12.sort.factory;
+package algorithm.practice12.sort.sortImpl;
 
 import algorithm.practice12.sort.sort.MSort12;
 
