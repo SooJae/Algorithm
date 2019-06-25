@@ -11,11 +11,12 @@ public class Test {
 		int key= sc.nextInt();
 		
 		SequentialSearch sq = new SequentialSearch();
-		//BinarySearch bs = new BinarySearch();
-		
-		if(sq.search(arr,key)==-1) System.out.println("값을 찾을 수 없습니다.");
-		else System.out.println(sq.search(arr,key)+1+"번째에 위치해있습니다.");
-		//System.out.println(bs.search(se,arr)+1 +"번째에 위치해있습니다.");
+		BinarySearch10 bs = new BinarySearch10();
+//		
+//		if(sq.search(arr,key)==-1) System.out.println("값을 찾을 수 없습니다.");
+//		else System.out.println(sq.search(arr,key)+1+"번째에 위치해있습니다.");
+//		System.out.println(bs.search(arr,key)+1 +"번째에 위치해있습니다.");
+		System.out.println(bs.searchRecur(arr,0,arr.length-1,key)+1 +"번째에 위치해있습니다.");
 		
 	}
 }
