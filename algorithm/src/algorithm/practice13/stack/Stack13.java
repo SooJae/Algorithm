@@ -1,18 +1,16 @@
-package algorithm.practice11.datastructure.qs;
+package algorithm.practice13.stack;
 
-import algorithm.practice10.datastructure.qs.Stack10.EmptyException;
-import algorithm.practice10.datastructure.qs.Stack10.OverflowException;
+public class Stack13 {
 
-public class Stack11 {
-
-	int ptr;
-	int size;
-	Object[] stk;
-	public Stack11(int size) {
-		this.size = size;
+	private int ptr;
+	private int size;
+	private Object[] stk;
+	public Stack13(int size) {
 		this.ptr = 0;
+		this.size = size;
 		stk = new Object[size];
 	}
+	
 	public static class OverflowException extends RuntimeException {
 	}
 	public static class EmptyException extends RuntimeException {
@@ -58,5 +56,5 @@ public class Stack11 {
 		
 	}
 	
-
+	
 }
